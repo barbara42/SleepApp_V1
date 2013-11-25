@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SleepApp_v1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- main activity -->
+    <string name="welcome">Welcome! Before you begin using SleepApp, you should take a quick survey!</string>
+    <string name="start_survey">Start Survey</string>
+    <string name="title_activity_psqisurvey">PSQIsurvey</string>
+    <string name="title_activity_psqisurvey_fragment1">PSQIsurvey_fragment1</string>
+    <string name="title_activity_psqisurvey_fragment2">PSQIsurvey_fragment2</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="psqisurvey_fragment1">Fragment one!</string>
+
+    <!-- PSQI Survey -->
+    <string name="bedtime">When have you usually gone to bed?</string>
+    <string name="fallasleep">How long (in minutes) has it taken you to fall asleep each night?</string>
+    <string name="wokeup">When have you usually gotten up in the morning?</string>
+    <string name="totalhours">How many hours of actual sleep do you get at night? (This may be different than the number of hours you spend in bed)</string>
+    <string name="default_time">Choose Time</string>
+
+    <string-array name="clock">
+        <item>7:00 PM</item>
+        <item>8:00 PM</item>
+        <item>9:00 PM</item>
+    </string-array>
+    <string-array name="minutes">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="hours">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string name="psqisurvey_fragment2">During the past month, how many times a week have you had trouble sleeping because you&#8230; </string>
+    <string name="psqisurvey_q1">Cannot get to sleep within 30 minutes</string>
+    <string name="psqisurvey_q2">Wake up in the middle of the night or early morning</string>
+    <string name="psqisurvey_q3">Have to get up to use the bathroom</string>
+    <string name="psqisurvey_q4">Cannot breathe comfortably</string>
+    <string name="psqisurvey_q5">Cough or snore loudly</string>
+    <string name="psqisurvey_q6">Feel too cold</string>
+    <string name="psqisurvey_q7">Feel too hot</string>
+    <string name="psqisurvey_q8">Have bad dreams</string>
+    <string name="psqisurvey_q9">Have pain</string>
+    <string name="psqisurvey_q10">During the past month, how often have you taken medicine 
+(prescribed or “over the counter”) to help you sleep?</string>
+    <string name="psqisurvey_q11">During the past month, how often have you had trouble staying 
+awake while driving, eating meals, or engaging in social activity?</string>
+    <string name="psqisurvey_q12">During the past month, how much of a problem has it been for 
+you to keep up enthusiasm to get things done?</string>
+    <string name="psqisurvey_q13">During the past month, how would you rate your sleep 
+quality overall?</string>
+    <string name="never">0</string>
+    <string name="once">&lt; 1</string>
+    <string name="twice">1&#8211;2</string>
+    <string name="three">3+</string>
+    <string name="title_activity_psqisurvey_fragment3">PSQIsurvey_fragment3</string>
+    <string name="title_activity_time_picker_fragment">TimePickerFragment</string>
+    <string name="title_activity_sleep_sensor">SleepSensorActivity</string>
+
+</resources>

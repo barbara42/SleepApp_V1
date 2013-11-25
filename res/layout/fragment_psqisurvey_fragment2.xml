@@ -1,0 +1,351 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin">
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/psqisurvey_fragment2" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="@dimen/psqisurvey"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q1" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q2" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q3" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q3"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q4" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q4"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q5" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q5"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q6" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q6"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q7" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q7"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q8" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q8"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/psqisurvey"
+	        android:text="@string/psqisurvey_q9" />
+	    <RadioGroup 
+	        android:id="@+id/radiogroup_q9"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_never9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/never"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_once9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/once"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_twice9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/twice"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		    <RadioButton android:id="@+id/radio_three9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/three"
+		        android:textSize="@dimen/psqisurvey_radio"
+		        android:onClick="onRadioButtonClicked"/>
+		</RadioGroup>
+		
+	    <Button 
+	        android:id="@+id/next_button2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="button2_onClick"
+	        android:text="@string/next" />
+	    
+	</LinearLayout>
+</ScrollView>

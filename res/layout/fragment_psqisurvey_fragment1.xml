@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PSQIsurvey_fragment1" >
+
+    <TextView
+        android:id="@+id/bedtime_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bedtime" />
+    <Button 
+        android:id="@+id/bedtime_button"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:text="@string/default_time" 
+	    android:onClick="showTimePickerDialog" />
+<!--     <Spinner -->
+<!-- 	    android:id="@+id/bedtime_spinner" -->
+<!-- 	    android:layout_width="fill_parent" -->
+<!-- 	    android:layout_height="wrap_content" /> -->
+    
+    <TextView
+        android:id="@+id/fallasleep_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fallasleep" />
+    <Spinner
+	    android:id="@+id/fallasleep_spinner"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" />
+    
+	<TextView
+        android:id="@+id/wokeup_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wokeup" />
+	<Button 
+        android:id="@+id/awake_button"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:text="@string/default_time" 
+	    android:onClick="showTimePickerDialog" />
+<!--     <Spinner -->
+<!-- 	    android:id="@+id/wokeup_spinner" -->
+<!-- 	    android:layout_width="fill_parent" -->
+<!-- 	    android:layout_height="wrap_content" /> -->
+    
+    <TextView
+        android:id="@+id/totalhours_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalhours" />
+    <Spinner
+	    android:id="@+id/totalhours_spinner"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" />
+    
+    <Button 
+        android:id="@+id/next_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="button1_onClick"
+        android:text="@string/next" />
+</LinearLayout>
