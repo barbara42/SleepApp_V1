@@ -58,7 +58,7 @@
         <item>14</item>
         <item>15</item>
     </string-array>
-        
+
     <string name="psqisurvey_fragment2">During the past month, how many times a week have you had trouble sleeping because you&#8230; </string>
     <string name="psqisurvey_q1">Cannot get to sleep within 30 minutes</string>
     <string name="psqisurvey_q2">Wake up in the middle of the night or early morning</string>
@@ -84,5 +84,6 @@ quality overall?</string>
     <string name="title_activity_psqisurvey_fragment3">PSQIsurvey_fragment3</string>
     <string name="title_activity_time_picker_fragment">TimePickerFragment</string>
     <string name="title_activity_sleep_sensor">SleepSensorActivity</string>
+    <string name="title_activity_data_view">DataView</string>
 
 </resources>

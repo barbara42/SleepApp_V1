@@ -46,6 +46,10 @@
             android:name="com.example.sleepapp_v1.SleepSensorActivity"
             android:label="@string/title_activity_sleep_sensor" >
         </activity>
+        <activity
+            android:name="com.example.sleepapp_v1.DataView"
+            android:label="@string/title_activity_data_view" >
+        </activity>
     </application>
 
 </manifest>

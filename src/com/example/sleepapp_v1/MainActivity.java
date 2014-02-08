@@ -1,7 +1,14 @@
 package com.example.sleepapp_v1;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v4.app.FragmentActivity;
@@ -17,9 +24,38 @@ public class MainActivity extends Activity {
     View v; 
     
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//test file in internal storage 
+		String filename = "outputStream_testFile";
+		String string = "Hello world!";
+		FileOutputStream outputStream;
+		try {
+		  outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
+		  outputStream.write(string.getBytes());
+		  outputStream.close();
+		} catch (Exception e) {
+		  e.printStackTrace();
+		}
+		
+		//test 2
+		View v = this.findViewById(android.R.id.content); 
+		Context context = v.getContext(); 
+		String str = context.getFilesDir().toString(); 
+		Log.w("File Dir", str); 
+		File newFile = new File(context.getFilesDir(), "getFilesDir_TestFile");
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(newFile));
+			String contents = "hi bitches"; 
+			writer.write(contents);
+			writer.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+			
 	}
 
 	@Override
@@ -30,12 +66,23 @@ public class MainActivity extends Activity {
 	}
 	
 	public void startSurvey(View view){
+		//test storage
+		View v = this.findViewById(android.R.id.content); 
+		Context context = v.getContext(); 
+		String str = context.getFilesDir().toString(); 
+		Log.w("File Dir", str); 
+		File file = new File(context.getFilesDir(), "getFilesDir_TestFile");
+		
 		Intent intent = new Intent(this, PSQIsurvey.class);
 		startActivity(intent);
 	}
 	
 	public void startSleepSensor(View view){
 		Intent intent = new Intent(this, SleepSensorActivity.class);
+		startActivity(intent);
+	}
+	public void viewData(View view){
+		Intent intent = new Intent(this, DataView.class);
 		startActivity(intent);
 	}
 	
@@ -49,12 +96,12 @@ public class MainActivity extends Activity {
 	    Log.w("Resume", "Main Activity Resumed");
 		//retrieves score from shared preferences
 	    //Test to see if it's there 
-		SharedPreferences settings = getSharedPreferences(PSQI_SCORE, 0);
-		int psqiScore = settings.getInt(PSQI_SCORE, -1);
-		Log.w("Shared Preferences", "score:" + psqiScore); 
-		View view = getWindow().getDecorView().findViewById(android.R.id.content);
-		TextView psqiTextView = (TextView)view.findViewById(R.id.psqi_score);
-		psqiTextView.setText("PSQI Score: " + psqiScore);
+//		SharedPreferences settings = getSharedPreferences(PSQI_SCORE, 0);
+//		int psqiScore = settings.getInt(PSQI_SCORE, -1);
+//		Log.w("Shared Preferences", "score:" + psqiScore); 
+//		View view = getWindow().getDecorView().findViewById(android.R.id.content);
+//		TextView psqiTextView = (TextView)view.findViewById(R.id.psqi_score);
+//		psqiTextView.setText("PSQI Score: " + psqiScore);
 	}
 
 	@Override
